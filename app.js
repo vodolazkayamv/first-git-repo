@@ -13,6 +13,6 @@ app.set('view engine', 'ejs')
 ///
 /// EXPRESS ROUTING
 ///
-app.use('/index', require('./routes/index'))
+app.use('/', require('./routes/index'))
 
 app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`))
