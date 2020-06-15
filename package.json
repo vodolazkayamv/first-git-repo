@@ -1,0 +1,22 @@
+{
+  "name": "first-git-repo",
+  "version": "1.0.0",
+  "description": "This is my first git repository and I like it Contact: 1134togo@gmail.com Link: https://github.com/goto1134",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vodolazkayamv/first-git-repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vodolazkayamv/first-git-repo/issues"
+  },
+  "homepage": "https://github.com/vodolazkayamv/first-git-repo#readme",
+  "dependencies": {
+    "find-min": "^1.1.2"
+  }
+}
