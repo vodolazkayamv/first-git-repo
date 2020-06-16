@@ -1,0 +1,65 @@
+table {
+    width: 600px;
+}
+.tg  {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    text-align: left;
+    vertical-align: top
+}
+
+.tg td.rating {
+    text-align: center;
+    width: 50px;
+}
+.tg td.poster {
+    width: 100px;
+    height: 150px;
+}
+.tg td.poster img {
+    float: right;
+    clip-path: inset(0% 0% 0% 0% round 20px);
+}
+.tg td.ruName {
+    padding-top: 10px;
+}
+.tg td.enName {
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: lighter;
+
+}
+.tg td.description {
+    font-size: smaller;
+}
+
+tag {
+    background-color: rgb(240, 240, 240); 
+    border-color:rgb(216, 216, 216);
+    border-style:solid;
+    border-width:1px;
+    border-radius: 4px;
+    padding: 3px;
+    font-size: small;
+    font-family: monospace;
+}
+
+filmName {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: larger;
+    font-style: bold;
+}
+
+h1 {
+    color: blue
+}
+
+.filmEntry {
+    width: 600px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.75);
+
+}

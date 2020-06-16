@@ -1,0 +1,35 @@
+<table class="tg">
+    <tbody>
+        <tr>
+            <td rowspan="4" class="rating">
+                <%= film.rating %>
+            </td>
+            <td class="ruName">
+                <filmName><%= film.nameRu %></filmName>
+            </td>
+            <td rowspan="4" class="poster">
+                <img src=" <%= film.posterUrl %> " width="100">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="enName">
+                <%= film.nameEn %>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="description">
+                <%= film.description %>
+            </td>
+        </tr>
+
+        <tr>
+                <td class="genres">
+                    <% film.genres.forEach(function(genre) { %>
+                    <tag> <%= genre.genre %></tag>
+                    <% }); %>
+                </td>
+        </tr>
+    </tbody>
+</table>
