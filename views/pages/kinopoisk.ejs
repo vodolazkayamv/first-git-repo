@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <link href="/styles/filmsTableStyle.css" rel="stylesheet">
+
+    <title>КиноПоиск</title>
+  </head>
+  <body>
+    <h1> <%= message %> </h1>
+
+    
+    <% films.forEach(function(film) { %>
+      <div class="filmEntry">
+      <%- include('../partials/filmDescription', {film: film}); %>
+      </div>
+    <% }); %>
+
+  </body>
+</html>

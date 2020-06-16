@@ -11,10 +11,13 @@ const createError = require('http-errors')
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
+app.use(express.static(__dirname + '/public'));
+
 ///
 /// EXPRESS ROUTING
 ///
 app.use('/', require('./routes/index'))
+app.use('/kp', require('./routes/kinopoisk'))
 
 ///
 /// ERROR HANDLER
