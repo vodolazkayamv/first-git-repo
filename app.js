@@ -18,6 +18,7 @@ app.use(express.static(__dirname + '/public'));
 ///
 app.use('/', require('./routes/index'))
 app.use('/kp', require('./routes/kinopoisk'))
+app.use('/api', require('./routes/api'))
 
 ///
 /// ERROR HANDLER

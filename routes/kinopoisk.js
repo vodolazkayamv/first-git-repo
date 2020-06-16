@@ -1,6 +1,7 @@
 var express = require('express')
 var router = express.Router()
 var rp = require('request-promise')
+var fs = require('fs');
 
 function makeAPIrequest(req, res, next) {
     
@@ -39,6 +40,19 @@ router.get('/', function(req, res) {
     res.render('pages/kinopoisk', {
         message: req.response.keyword,
         films: films
+    })
+})
+
+router.get('/api', function(req, res) {
+    fs.readFile('films.json', function(err, content) {
+        if (err) throw err
+
+        let films = JSON.parse(content)
+        
+        res.render('pages/kinopoisk', {
+            message: req.response.keyword,
+            films: films
+        })
     })
 })
 
